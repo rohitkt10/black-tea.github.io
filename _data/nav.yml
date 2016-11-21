@@ -1,8 +1,11 @@
-- name: "Contact"
-  link: "contact"
+- name: "writing"
+  link: "writing"
 
-- name: "Resume"
-  link: "resume.pdf"
+- name: "projects"
+  link: "projects"
 
-- name: "About"
-  link: "/researcher/"
+- name: "research"
+  link: "research"
+
+- name: "home"
+  link: "https://black-tea.github.io"
