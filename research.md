@@ -4,7 +4,7 @@ layout: default
 
 ## Peer-reviewed Publications
 
-1. M.Brozen, T.Black, R.Liggett: Comparing Measures and Variables in Multimodal Street Performance Calculations (paper)
+1. M.Brozen, T.Black, R.Liggett: Comparing Measures and Variables in Multimodal Street Performance Calculations ([paper](http://trrjournalonline.trb.org/doi/10.3141/2420-01))
 
 ## Other Transportation Research
 
