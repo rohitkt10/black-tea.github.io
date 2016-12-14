@@ -4,7 +4,7 @@ layout: default
 
 ## Side Projects
 
-<img class="projects-image" src="images/labusmap_croppedclip.jpg">
+<a href=http://www.labusmap.com><img class="projects-image" src="images/labusmap_croppedclip.jpg"></a>
 
 ### **The LA Bus Map**
 The map displays all LA Metro transit service for the past 24 hours, colored based on bus speed. The concept originally came from Eric Fisher's transit maps, but the code from this particular project was forked from the Boston Bus Map. For Los Angeles, I used MapBox's TileMill to create custom map tiles for three different zoom levels and created separate layers to differentiate by local / rapid service.
