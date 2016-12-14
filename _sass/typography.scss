@@ -55,8 +55,8 @@
         }
     }
     .projects-image {
-        height: 200;
-        width: 200;
+        height: 400;
+        width: 400;
         position: relative;
         margin: 20 0 0 0px;
         float: left;
@@ -69,7 +69,6 @@
         @media (max-width: $small-width) {
             img {
                 margin-top: -5px;
-                margin-right: 20px;
             }
         }
     }
