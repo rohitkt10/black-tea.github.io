@@ -6,9 +6,14 @@ layout: default
 
 1. M.Brozen, T.Black, R.Liggett: Comparing Measures and Variables in Multimodal Street Performance Calculations ( [paper](http://trrjournalonline.trb.org/doi/10.3141/2420-01) )
 
-## Other Transportation Research
+## Side Projects
 
-1. T.Black, J.Swartz, T.Fremaux - Vision Zero and Beyond: A Simple Yet Powerful Data Strategy for Evaluating Potential Engineering Solutions 
-2. T.Black - Redefining "Transportation Impact": A Comparison of Emerging Methodologies ( [paper](documents/TRB2015_SB743_Paper.pdf) / [slides](documents/TRB2015_SB743_Slides.pdf) )
-3. T.Black, S.Montes, C.Osborne, M.Sahimi - The Los Angeles Bus Map ( [paper](documents/TRB2015_LABusMap_Paper.pdf) / [slides](documents/TRB2015_LABusMap_Slides.pdf) )
-4. M.Brozen, T.Black, H.Huff, R.Liggett - Multimodal Street Performance Measure Sensitivity Case Study: How to Get an A ( [poster](documents/TRB2015_MMLOS_Poster.pdf) )
+### **The LA Bus Map**
+
+*javascript, PHP, MySQL*
+
+This website was created as the final project for Intermediate GIS at UCLA. The map displays all LA Metro transit service for the past 24 hours, colored based on bus speed. The concept originally came from Eric Fisher's transit maps, but the code from this particular project was forked from the Boston Bus Map. For Los Angeles, I used MapBox's TileMill to create custom map tiles for three different zoom levels and created separate layers to differentiate by local / rapid service.
+
+ [website](http://www.labusmap.com) / [code](http://www.github.com/black-tea) / [paper](www.google.com) / [slides](www.google.com) 
+
+---
