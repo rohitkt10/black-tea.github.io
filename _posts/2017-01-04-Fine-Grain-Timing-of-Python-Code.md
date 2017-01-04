@@ -23,11 +23,11 @@ class Timer(object):
 
 To use it, per Nguyen's instructions, just wrap the block of code that you want to test with Python's with keyword and call the newly created Timer context manager. Below, my use in timing how long it would take to import a CSV file:
 
-{% highlight python %}
+```python
 with Timer() as t:
   csv_list = FldrLoopCSV(directory)
   LoadCSVs(dbfile, csv_list)
 
 # Benchmarking
 print "=> elasped time: %s s" % t.secs
-{% endhighlight %}
+```
