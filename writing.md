@@ -1,8 +1,12 @@
 ---
 layout: default
 ---
-
-## Transportation Safety
-
-* The Original Vision Zero - 11/25/2016
-* The Power of Passive - 11/31/2016
+<div id="articles">
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+</div>
