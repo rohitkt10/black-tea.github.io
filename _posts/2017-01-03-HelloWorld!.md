@@ -1,4 +1,4 @@
 ---
-category: Data Analysis
+category: hi
 ---
 The obligatory hello world
