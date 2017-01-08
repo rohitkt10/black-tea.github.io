@@ -2,7 +2,7 @@
 layout: post
 ---
 {% for category in site.categories %}
-  <li><a name="{{ category | first }}">{{ category | first }}</a>
+  <a name="{{ category | first }}">{{ category | first }}</a>
     <ul>
     {% for posts in category %}
       {% for post in posts %}
@@ -10,5 +10,4 @@ layout: post
       {% endfor %}
     {% endfor %}
     </ul>
-  </li>
 {% endfor %}
