@@ -1,6 +1,6 @@
 <div id="articles">
 {% for category in site.categories %}
-  <a name="{{ category | first }}">{{ category | first }}</a>
+  <h3>{{ category | first }}</h3>
     <ul>
     {% for posts in category %}
       {% for post in posts %}
