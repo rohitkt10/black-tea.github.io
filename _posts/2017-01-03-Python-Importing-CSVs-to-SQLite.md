@@ -1,5 +1,5 @@
 ---
-category: Policy - Vision Zero
+category: Data Analysis
 ---
 Bulk loading of CSVs into a database is something I've done on numerous occasions, so it made sense to learn how to do it properly. Typically this involves opening the CSV, reading each line, and then writing the line to the database. As the size of the files gets larger, it is more important that the import is done as efficiently as possible.
 
