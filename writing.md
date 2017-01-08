@@ -1,6 +1,4 @@
----
-layout: default
----
+<div id="articles">
 {% for category in site.categories %}
   <a name="{{ category | first }}">{{ category | first }}</a>
     <ul>
@@ -11,3 +9,4 @@ layout: default
     {% endfor %}
     </ul>
 {% endfor %}
+</div>
