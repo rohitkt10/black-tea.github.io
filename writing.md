@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 ---
 {% for category in site.categories %}
   <a name="{{ category | first }}">{{ category | first }}</a>
