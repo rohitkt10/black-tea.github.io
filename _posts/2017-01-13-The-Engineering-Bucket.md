@@ -13,7 +13,7 @@ The traditional engineering approach in the United States has been to focus almo
 
 The approaches to these two different goals are a bit different, as shown in the diagram below.
 
-![VZ Engineering Bucket]({{ site.url }}/images/VZ_Engineering_Bucket.png)
+![VZ Engineering Bucket](/images/VZ_Engineering_Bucket.png)
 
 ## Strategy 1: Reduce the number of conflicts
 Traffic engineering is already pretty decent at reducing the number of conflicts - there is extensive literature on the crash modification factor (CMF) of different treatments. Still, in the context of Vision Zero, there are probably two areas where we can improve:
