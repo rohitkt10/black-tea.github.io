@@ -43,4 +43,4 @@ jupyter notebook
 into the terminal.
 
 ## Step 3: Install Git and Configure Github
-The final step is to install git and connect to my online Github account. I followed [these](https://www.howtoforge.com/tutorial/install-git-and-github-on-ubuntu-14.04/) instructions.
+The final step is to install git and connect to my online Github account. I followed [these](https://www.howtoforge.com/tutorial/install-git-and-github-on-ubuntu-14.04/) instructions. For those unfamiliar with using Git / Github, a good place to start would be [here](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/a).
