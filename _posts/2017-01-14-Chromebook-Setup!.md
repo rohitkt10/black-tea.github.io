@@ -25,4 +25,4 @@ After editing the path variable, I can now open the jupyter notebook just by typ
 ```
 jupyter notebook
 ```
-into the terminal.
+into the terminal. Done!
