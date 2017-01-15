@@ -1,6 +1,7 @@
 ---
 category: Data Analysis
 ---
+# My Chromebook Setup
 I just finished setting up the data analysis environment on my chromebook. I'll retrace my steps here in case anyone else wants to do the same.
 
 ## Step 1: Install Ubuntu
