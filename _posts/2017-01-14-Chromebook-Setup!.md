@@ -12,17 +12,17 @@ I then used [this guide](https://www.linuxbabe.com/ubuntu/install-google-chrome-
 Installing Anaconda is the easiest and quickest way to get the data analytics environment up and running. Within the installed chrome browser, I downloaded [Anaconda for Linux](https://www.continuum.io/downloads), navigated to the Downloads folder in the terminal window, and then installed using the bash command in the instructions.
 
 When I installed Anaconda, the Anaconda directory was not added to the bash shell PATH variable, so (using the Gedit text editor) I added it to the file:
-'''
+```
 gedit ~/.bashrc
-'''
+```
 which opened the .bashrc file, navigated to the appropriate line and added
-'''
+```
 export PATH="/home/tcblack/anaconda2/bin:$PATH"
-'''
+```
 (make sure to replace 'tcblack' with your username) and edit the path if it is different from this one.
 
 After editing the path variable, I can now open the jupyter notebook just by typing in
-'''
+```
 jupyter notebook
-'''
+```
 into the terminal.
