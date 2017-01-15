@@ -9,9 +9,11 @@ The very first step is to install ubuntu, so you can then install python and all
 I then used [this guide](https://www.linuxbabe.com/ubuntu/install-google-chrome-ubuntu-16-04-lts) to install the chrome browser (installing within the linux environment). I also installed a the default Ubuntu GUI text editor Gedit via [these instructions](https://help.ubuntu.com/community/gedit).
 
 I later decided I also wanted to install the sublime text editor. It is really quite easy and explained well [here](http://monkeyhacks.com/post/how-to-install-sublime-text-2-on-ubuntu-14-04). However, after getting this message:
+
 ```
 sudo: add-apt-repository: command not found
 ```
+
 I needed to install the sudo-apt-repository command, which I did following [these](http://lifeonubuntu.com/ubuntu-missing-add-apt-repository-command/) instructions.
 
 ## Step 2: Install Anaconda
