@@ -7,4 +7,29 @@ This is a basic tutorial for quickly installing Postgres w/ PostGIS and GeoServe
 ## Step 1: Launch an instance of Ubuntu on a DigitalOcean droplet
 Head over to [DigitalOcean](https://www.digitalocean.com/) and setup a droplet. I just used the default Ubuntu installation with 512mb of memory and 20GB on disk. You will get an email with the automatically generated root password. After turning on the droplet, launch the console. Login w/ root username and the password that was sent. It will prompt you to change your password.
 
+## Step 2: Install PostgreSQL and PostGIS Extension
+By default, Ubuntu’s package manager APT contains PostgreSQL packages, so installation is pretty easy. At the time of this writing, the latest PostgreSQL version was 9.5. Before you do anything, always make sure to update the package manager.
+```
+# Update ubuntu apt
+sudo apt-get update
+
+# Install PostgreSQL
+sudo apt-get install postgresql-9.5
+
+# Optional commands to install useful PostgreSQL packages
+sudo apt-get install postgresql-contrib-9.5
+
+# Add PostGIS extension
+sudo apt-get install postgresql-9.5-postgis
+```
+
+## Step 2: Run PostgreSQL
+After installation, it will create a new user account on your Ubuntu machine named postgres. It will have all access privileges to your PostgreSQL database. Run the following commands to switch to the new user and run the PostgreSQL CLI.
+```
+# Switch to postgres user
+sudo -i -u postgres
+
+# Start postgres cli
+psql
+```
 
