@@ -31,8 +31,28 @@ sudo -i -u postgres
 
 # Start postgres command line interface
 psql
+
+# Set root user credentials
+ALTER USER postgres PASSWORD 'newpassword';
+
+# Exit psql
+\quit
 ```
 
 ## Step 4: Edit Config File (if you plan to connect remotely)
 If you plan on connecting to the postgres database from outside the virtual machine, you will need to edit the Postgres configuration file to listen from all ip addresses. In my case, I plan on connecting through a linux installation of pgadmin3 on my chromebook which has been configured using these [instructions](https://black-tea.github.io/data%20analysis/2017/01/14/Chromebook-Setup!.html).
+```
+# Open the configuration file
+nano "/etc/postgresql/9.3/main/postgresql.conf"
+```
+Make sure to edit the line
+```
+#listen_addresses = 'localhost'
+```
+to
+```
+#listen_addresses = '*'
+```
+
+
 
