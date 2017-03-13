@@ -23,7 +23,7 @@ sudo apt-get install postgresql-contrib-9.5
 sudo apt-get install postgresql-9.5-postgis
 ```
 
-## Step 2: Run PostgreSQL
+## Step 3: Run PostgreSQL
 After installation, it will create a new user account on your Ubuntu machine named postgres. It will have all access privileges to your PostgreSQL database. Run the following commands to switch to the new user and run the PostgreSQL CLI.
 ```
 # Switch to postgres user
@@ -32,6 +32,7 @@ sudo -i -u postgres
 # Start postgres command line interface
 psql
 ```
-## Step 2: Edit Config File (if you plan to connect remotely)
-If you plan on connecting to the postgres database from outside the droplet, you will need to edit the Postgres configuration file to listen from all ip addresses. In my case, I plan on connecting through a linux installation of pgadmin3 on my chromebook which has been configured using these [instructions](https://black-tea.github.io/data%20analysis/2017/01/14/Chromebook-Setup!.html)
+
+## Step 4: Edit Config File (if you plan to connect remotely)
+If you plan on connecting to the postgres database from outside the virtual machine, you will need to edit the Postgres configuration file to listen from all ip addresses. In my case, I plan on connecting through a linux installation of pgadmin3 on my chromebook which has been configured using these [instructions](https://black-tea.github.io/data%20analysis/2017/01/14/Chromebook-Setup!.html).
 
