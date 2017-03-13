@@ -5,7 +5,7 @@ category: Data Analysis
 This is a basic tutorial for quickly installing Postgres w/ PostGIS and GeoServer on an Ubuntu image using Digital Ocean. Using these steps, you can be up and running in less than 10 minutes.
 
 ## Step 1: Launch an instance of Ubuntu on a DigitalOcean droplet
-Head over to [DigitalOcean](https://www.digitalocean.com/) and setup a droplet. I just used the default Ubuntu installation with 512mb of memory and 20GB on disk. You will get an email with the automatically generated root password. After turning on the droplet, launch the console. Login w/ root username and the password that was sent. It will prompt you to change your password.
+Head over to [DigitalOcean](https://www.digitalocean.com/) and setup a droplet. I just used the default Ubuntu installation with 512mb of memory and 20GB on disk. You will get an email with the automatically generated root password. After turning on the droplet, launch the console or use your SSH application (Secure Shell on my chromebook). Login w/ root username and the password that was sent. It will prompt you to change your password.
 
 ## Step 2: Install PostgreSQL and PostGIS Extension
 By default, Ubuntu’s package manager APT contains PostgreSQL packages, so installation is pretty easy. At the time of this writing, the latest PostgreSQL version was 9.5. Before you do anything, always make sure to update the package manager.
@@ -29,7 +29,9 @@ After installation, it will create a new user account on your Ubuntu machine nam
 # Switch to postgres user
 sudo -i -u postgres
 
-# Start postgres cli
+# Start postgres command line interface
 psql
 ```
+## Step 2: Edit Config File (if you plan to connect remotely)
+If you plan on connecting to the postgres database from outside the droplet, you will need to edit the Postgres configuration file to listen from all ip addresses. In my case, I plan on connecting through a linux installation of pgadmin3 on my chromebook which has been configured using these [instructions](https://black-tea.github.io/data%20analysis/2017/01/14/Chromebook-Setup!.html)
 
