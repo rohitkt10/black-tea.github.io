@@ -43,7 +43,7 @@ ALTER USER postgres PASSWORD 'newpassword';
 If you plan on connecting to the postgres database from outside the virtual machine, you will need to edit the Postgres configuration file to listen from all ip addresses. In my case, I plan on connecting through a linux installation of pgadmin3 on my chromebook which has been configured using these [instructions](https://black-tea.github.io/data%20analysis/2017/01/14/Chromebook-Setup!.html).
 ```
 # Open the configuration file
-nano "/etc/postgresql/9.3/main/postgresql.conf"
+nano "/etc/postgresql/9.5/main/postgresql.conf"
 ```
 Make sure to edit the line
 ```
