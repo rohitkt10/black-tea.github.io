@@ -51,8 +51,12 @@ Make sure to edit the line
 ```
 to
 ```
-#listen_addresses = '*'
+listen_addresses = '*'
 ```
-
+You can verify that you are listening from all ports by
+```
+netstat -plnt
+```
+which should show 0.0.0.0:5432 on the line with Postgres. If it was not configured to listen to all ip addresses, it would read: 127.0.0.1:5432
 
 
