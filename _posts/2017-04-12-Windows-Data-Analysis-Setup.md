@@ -14,5 +14,4 @@ C:\Python27\ArcGIS10.4\python.exe
 ```
 
 ## Step 2: Install PostgreSQL and PostGIS Extension
-I used the interactive installer provided through EnterpriseDB and recommended on the [PostgreSQL website,](https://www.postgresql.org/download/windows/) using StackBuilder to easily add the PostGIS extension. One
-of the unfortunate things I realized 
+I used the interactive installer provided through EnterpriseDB and recommended on the [PostgreSQL website,](https://www.postgresql.org/download/windows/) using StackBuilder to easily add the PostGIS extension. One of the functionalities that I needed to enable includes the Pl/Python language so that I can run python scripts within the PostgreSQL database. Unfortunately, based on information [here](http://stackoverflow.com/questions/24216627/how-to-install-pl-python-on-postgresql-9-3-x64-windows-7), it looks like the Windows builds no longer contain support for plpython2 (for Python 2.7), only plpython3 (for Python 3.X). 
