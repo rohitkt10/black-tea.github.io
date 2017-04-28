@@ -4,8 +4,7 @@ category: Data Analysis
 # Setting Up Foreign Data Wrappers (FDWs) in PostgreSQL
 This is a basic tutorial for connecting external data to your PostgreSQL database through what is called a "foreign data wrapper." 
 At the time of this writing, the only FDW that comes prepacked with PostgreSQL includes fdw_file, used to query files on your computer. 
-In this example, I am going to pull one from a wiki [catalog](http://wiki.postgresql.org/wiki/Foreign_data_wrappers) of people who 
-have created them.
+In this example, I am going to pull one from a wiki [catalog](http://wiki.postgresql.org/wiki/Foreign_data_wrappers) of third-party wrappers.
 
 ## Step 1: Install the OGR FDW
 I already have the spatially-oriented fdw wrapper "ogr_fdw" installed as part of 
