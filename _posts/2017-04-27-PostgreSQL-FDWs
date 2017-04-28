@@ -35,4 +35,15 @@ IMPORT FOREIGN SCHEMA ogr_all
 	FROM SERVER bss_pci 
     INTO fgdball;
 '
-Unfortunately, in this case the default primary key column, 'fid,' does not satisfy the unique condition, so 
+Unfortunately, when I ran this query I ran into the following error:
+`
+ERROR:  column "fid" specified more than once
+CONTEXT:  importing foreign table "ogrgeojson"
+********** Error **********
+
+ERROR: column "fid" specified more than once
+SQL state: 42701
+Context: importing foreign table "ogrgeojson"
+`
+And so I am still here troubleshooting...
+
