@@ -44,5 +44,5 @@ ERROR: column "fid" specified more than once
 SQL state: 42701
 Context: importing foreign table "ogrgeojson"
 ```
-And so I am still here troubleshooting...
+And so I am still here troubleshooting...see recent changes; try setting layer name to default name of 'OGRGeoJSON,' based on [this](http://www.gdal.org/drv_geojson.html).
 
