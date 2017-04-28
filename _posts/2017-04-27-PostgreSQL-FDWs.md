@@ -36,7 +36,7 @@ IMPORT FOREIGN SCHEMA ogr_all
 ```
 Once this process is complete, you should refresh your schema bucket, and you should now see a new schema called 'hin_schema.' Scroll down to the foreign table bucket, and you should see a new foreign table called 'ogrgeojson.' 
 
-![FDW_ForeignTableSchema](/images/FDW_ForeignTableSchema.png)
+![FDW_ForeignTableSchema](/images/FDW_ForeignTableSchema.PNG)
 
 If it was configured correctly, you can now query that table as you would query any other table in your database
 ```
