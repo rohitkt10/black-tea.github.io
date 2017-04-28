@@ -36,15 +36,11 @@ IMPORT FOREIGN SCHEMA ogr_all
 ```
 Once this process is complete, you should refresh your schema bucket, and you should now see a new schema called 'hin_schema.' Scroll down to the foreign table bucket, and you should see a new foreign table called 'ogrgeojson.' 
 
+![ForeignTableSchema](/images/FDW_ForeignTableSchema.png)
 
+If it was configured correctly, you can now query that table as you would query any other table in your database
 ```
-ERROR:  column "fid" specified more than once
-CONTEXT:  importing foreign table "ogrgeojson"
-********** Error **********
-
-ERROR: column "fid" specified more than once
-SQL state: 42701
-Context: importing foreign table "ogrgeojson"
+SELECT * FROM hin_schema.ogrgeojson;
 ```
 
 
