@@ -17,24 +17,26 @@ CREATE EXTENSION ogr_fdw;
 ```
 
 ## Step 2: Install the Foreign Data Server and Setup a Foreign Data Table
-In this case I wanted to query the BSS Pavement Quality Index, which is listed on the GeoHub Portal [here](http://geohub.lacity.org/datasets/2d945910272548a6ae0b57126000669a_0?geometry=-121.027%2C33.679%2C-115.8%2C34.362&uiTab=table).
+In this case, let's say I wanted to query the High Injury Network, which is listed on the GeoHub Portal [here](http://geohub.lacity.org/datasets/4ba1b8fa8d8946348b29261045298a88_0).
 ```
-CREATE SERVER bss_pci
+CREATE SERVER hin
   FOREIGN DATA WRAPPER ogr_fdw
   OPTIONS (
-    datasource 'http://geohub.lacity.org/datasets/2d945910272548a6ae0b57126000669a_0.geojson',
+    datasource 'http://geohub.lacity.org/datasets/4ba1b8fa8d8946348b29261045298a88_0.geojson',
     format 'GeoJSON' );
 ```
 After creating the foreign data server, I needed to create a foreign table. The ogr_fdw has a nifty feature for PostgreSQL 9.5+ users; 
-you can do automatic foreign table creation, which you can read more about [here](https://github.com/pramsey/pgsql-ogr-fdw).
+you can do automatic foreign table creation, which you can read more about [here](https://github.com/pramsey/pgsql-ogr-fdw). The method that I use below will import all the tables at the datasource, which in this case is only one. If you do want to query only one table at a time, you will need to set a layer name; the default layer name is 'OGRGeoJSON,' based on the information [here](http://www.gdal.org/drv_geojson.html).
 ```
-CREATE SCHEMA fgdball;
+CREATE SCHEMA hin_schema;
 
 IMPORT FOREIGN SCHEMA ogr_all 
-	FROM SERVER bss_pci 
-    INTO fgdball;
+	FROM SERVER hin 
+    INTO hin_schema;
 ```
-Unfortunately, when I ran this query I ran into the following error:
+Once this process is complete, you should refresh your schema bucket, and you should now see a new schema called 'hin_schema.' Scroll down to the foreign table bucket, and you should see a new foreign table called 'ogrgeojson.' 
+
+
 ```
 ERROR:  column "fid" specified more than once
 CONTEXT:  importing foreign table "ogrgeojson"
@@ -44,5 +46,5 @@ ERROR: column "fid" specified more than once
 SQL state: 42701
 Context: importing foreign table "ogrgeojson"
 ```
-And so I am still here troubleshooting...see recent changes; try setting layer name to default name of 'OGRGeoJSON,' based on [this](http://www.gdal.org/drv_geojson.html).
+
 
