@@ -25,3 +25,6 @@ However, the trickiest part of this installation is that you will need to instal
 
 ## Step 4: Install Anaconda
 The tricky part of this is to install the Anaconda distribution of python without breaking the original ESRI python stack. I just followed these [instructions](https://my.usgs.gov/confluence/pages/viewpage.action?pageId=540116867) from the USGS. Make sure you download the 32-bit installation, even if you have a 64-bit machine.
+
+## Step 4: Install Git and GitHub for Windows
+I followed the instructions on [this page](https://help.github.com/articles/set-up-git/) to setup my machine for github.
