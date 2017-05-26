@@ -1,11 +1,14 @@
-- name: "writing"
-  link: "writing"
+- name: "About"
+  link: "About"
 
-- name: "projects"
-  link: "projects"
+- name: "Projects"
+  link: "Projects"
 
-- name: "research"
-  link: "research"
+- name: "Research"
+  link: "Research"
 
-- name: "home"
+- name: "Blog"
+  link: "Blog"
+
+- name: "Home"
   link: "https://black-tea.github.io"
